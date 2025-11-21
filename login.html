@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EduLearn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <!-- Left Side - Form -->
+        <div class="login-form-section">
+            <div class="login-header">
+                <a href="index.html" class="back-link">← Volver</a>
+                <div class="login-logo">
+                    <span class="logo">📚</span>
+                    <span class="brand-name">EduLearn</span>
+                </div>
+            </div>
+
+            <div class="login-content">
+                <h1 id="formTitle">Bienvenido de nuevo</h1>
+                <p class="login-subtitle" id="formSubtitle">Ingresa a tu cuenta para continuar aprendiendo</p>
+
+                <div class="divider">
+                    <span>Usa tu email</span>
+                </div>
+
+                <!-- FORMULARIO -->
+                <form class="login-form" id="authForm">
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <!-- CAMPO SOLO PARA REGISTRO -->
+                    <div class="form-group" id="nameGroup" style="display:none;">
+                        <label for="fullName">Nombre completo</label>
+                        <input type="text" id="fullName" placeholder="Tu nombre">
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submitBtn">Iniciar sesión</button>
+                </form>
+
+                <p class="signup-text">
+                    <span id="toggleText">¿No tienes cuenta?</span>
+                    <a href="#" class="signup-link" id="toggleMode">Regístrate gratis</a>
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Right Side - Visual -->
+        <div class="login-visual-section">
+            <div class="visual-content">
+                <h2>Aprende a tu ritmo, alcanza tus metas</h2>
+                <p>Más de 50,000 estudiantes confían en EduLearn para impulsar sus carreras</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Login + Registro Lógico -->
+    <script src="auth.js"></script>
+
+</body>
+</html>

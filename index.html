@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Plataforma de Cursos Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">📚</span>
+                <span class="brand-name">EduLearn</span>
+            </div>
+            <div class="nav-links">
+                <a href="#cursos">Cursos</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#precios">Precios</a>
+                <a href="login.html" class="btn-login">Iniciar Sesión</a>
+                <a href="login.html" class="btn-register">Registrarse</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Aprende sin límites con <span class="gradient-text">EduLearn</span></h1>
+                <p class="hero-subtitle">Accede a miles de cursos online, evalúa tu progreso y alcanza tus metas profesionales desde cualquier dispositivo</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn-primary">Comenzar ahora</a>
+                    <a href="#cursos" class="btn-secondary">Ver cursos</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Estudiantes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Cursos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfacción</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <span class="card-icon">🎓</span>
+                    <div>
+                        <div class="card-title">Curso completado</div>
+                        <div class="card-subtitle">JavaScript Avanzado</div>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">📊</span>
+                    <div>
+                        <div class="card-title">Progreso</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-icon">⭐</span>
+                    <div>
+                        <div class="card-title">Calificación</div>
+                        <div class="card-subtitle">9.5 / 10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir EduLearn?</h2>
+            <p class="section-subtitle">Todo lo que necesitas para impulsar tu aprendizaje</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Evaluaciones Automáticas</h3>
+                    <p>Recibe feedback instantáneo con nuestro sistema de evaluación inteligente</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Seguimiento de Progreso</h3>
+                    <p>Visualiza tu avance en tiempo real con dashboards detallados</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multiplataforma</h3>
+                    <p>Aprende desde cualquier dispositivo: PC, tablet o móvil</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Alta Velocidad</h3>
+                    <p>Plataforma optimizada que escala según la demanda</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Certificados</h3>
+                    <p>Obtén certificados verificables al completar tus cursos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Conéctate con miles de estudiantes y profesores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="cursos">
+        <div class="container">
+            <h2 class="section-title">Cursos populares</h2>
+            <p class="section-subtitle">Explora nuestra selección de cursos más demandados</p>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="course-content">
+                        <span class="course-category">Programación</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <p>Aprende HTML, CSS, JavaScript, React y Node.js desde cero</p>
+                        <div class="course-footer">
+                            <span class="course-students">👥 12,450</span>
+                            <span class="course-rating">⭐ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="course-content">
+                        <span class="course-category">Diseño</span>
+                        <h3>UX/UI Design Profesional</h3>
+                        <p>Crea experiencias de usuario excepcionales con Figma</p>
+                        <div class="course-footer">
+                            <span class="course-students">👥 8,320</span>
+                            <span class="course-rating">⭐ 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="course-content">
+                        <span class="course-category">Data Science</span>
+                        <h3>Machine Learning con Python</h3>
+                        <p>Domina algoritmos de ML y construye modelos predictivos</p>
+                        <div class="course-footer">
+                            <span class="course-students">👥 9,876</span>
+                            <span class="course-rating">⭐ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="course-content">
+                        <span class="course-category">Marketing</span>
+                        <h3>Marketing Digital Avanzado</h3>
+                        <p>Estrategias de SEO, SEM y Social Media Marketing</p>
+                        <div class="course-footer">
+                            <span class="course-students">👥 11,234</span>
+                            <span class="course-rating">⭐ 4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Comienza tu viaje de aprendizaje hoy</h2>
+            <p>Únete a miles de estudiantes que ya están transformando sus carreras</p>
+            <a href="login.html" class="btn-primary">Crear cuenta gratis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EduLearn</h4>
+                    <p>La plataforma de aprendizaje online que se adapta a ti</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Producto</h4>
+                    <a href="#">Cursos</a>
+                    <a href="#">Precios</a>
+                    <a href="#">Enterprise</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <a href="#">Centro de ayuda</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduLearn. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

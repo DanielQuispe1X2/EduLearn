@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EduLearn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span class="logo">📚</span>
+                <span class="brand-name">EduLearn</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Inicio</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📚</span>
+                <span class="nav-text">Mis Cursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-text">Explorar</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Progreso</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🏆</span>
+                <span class="nav-text">Certificados</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">💬</span>
+                <span class="nav-text">Mensajes</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">Configuración</span>
+            </a>
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🚪</span>
+                <span class="nav-text">Cerrar Sesión</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1 class="page-title">Bienvenido de vuelta, Juan 👋</h1>
+            </div>
+            <div class="topbar-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar cursos...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <button class="notification-btn">
+                    <span class="notif-icon">🔔</span>
+                    <span class="notif-badge">3</span>
+                </button>
+                <div class="user-menu">
+                    <img src="https://ui-avatars.com/api/?name=Juan+Perez&background=6366f1&color=fff" alt="Usuario" class="user-avatar">
+                    <span class="user-name">Juan Pérez</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">📚</div>
+                    <div class="stat-info">
+                        <h3>Cursos Activos</h3>
+                        <p class="stat-number">5</p>
+                        <span class="stat-change positive">+2 este mes</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">⏱️</div>
+                    <div class="stat-info">
+                        <h3>Horas de Estudio</h3>
+                        <p class="stat-number">42h</p>
+                        <span class="stat-change positive">+8h esta semana</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🎯</div>
+                    <div class="stat-info">
+                        <h3>Promedio</h3>
+                        <p class="stat-number">8.5</p>
+                        <span class="stat-change positive">+0.5 puntos</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">🏆</div>
+                    <div class="stat-info">
+                        <h3>Certificados</h3>
+                        <p class="stat-number">3</p>
+                        <span class="stat-change">2 pendientes</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Continue Learning -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>Continuar Aprendiendo</h2>
+                    <a href="#" class="view-all">Ver todos →</a>
+                </div>
+                <div class="courses-row">
+                    <div class="course-card-dashboard">
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="course-badge">En progreso</span>
+                        </div>
+                        <div class="course-info">
+                            <span class="course-category">Programación</span>
+                            <h3>Desarrollo Web Full Stack</h3>
+                            <p>Módulo 5: React avanzado</p>
+                            <div class="course-progress">
+                                <div class="progress-bar-dash">
+                                    <div class="progress-fill-dash" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                            <button class="btn-continue">Continuar</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card-dashboard">
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="course-badge">En progreso</span>
+                        </div>
+                        <div class="course-info">
+                            <span class="course-category">Diseño</span>
+                            <h3>UX/UI Design Profesional</h3>
+                            <p>Módulo 3: Prototipos interactivos</p>
+                            <div class="course-progress">
+                                <div class="progress-bar-dash">
+                                    <div class="progress-fill-dash" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45%</span>
+                            </div>
+                            <button class="btn-continue">Continuar</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card-dashboard">
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="course-badge">En progreso</span>
+                        </div>
+                        <div class="course-info">
+                            <span class="course-category">Data Science</span>
+                            <h3>Machine Learning con Python</h3>
+                            <p>Módulo 2: Regresión Lineal</p>
+                            <div class="course-progress">
+                                <div class="progress-bar-dash">
+                                    <div class="progress-fill-dash" style="width: 30%"></div>
+                                </div>
+                                <span class="progress-text">30%</span>
+                            </div>
+                            <button class="btn-continue">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two Column Layout -->
+            <div class="two-column-layout">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <!-- Upcoming Evaluations -->
+                    <section class="section">
+                        <div class="section-header">
+                            <h2>Próximas Evaluaciones</h2>
+                        </div>
+                        <div class="evaluation-list">
+                            <div class="evaluation-item">
+                                <div class="eval-icon">📝</div>
+                                <div class="eval-info">
+                                    <h4>Examen Final - JavaScript</h4>
+                                    <p>Desarrollo Web Full Stack</p>
+                                    <span class="eval-date">Mañana, 10:00 AM</span>
+                                </div>
+                                <button class="btn-eval">Preparar</button>
+                            </div>
+                            <div class="evaluation-item">
+                                <div class="eval-icon">✏️</div>
+                                <div class="eval-info">
+                                    <h4>Quiz: Principios de UX</h4>
+                                    <p>UX/UI Design Profesional</p>
+                                    <span class="eval-date">En 3 días</span>
+                                </div>
+                                <button class="btn-eval">Preparar</button>
+                            </div>
+                            <div class="evaluation-item">
+                                <div class="eval-icon">🎯</div>
+                                <div class="eval-info">
+                                    <h4>Proyecto Final - ML</h4>
+                                    <p>Machine Learning con Python</p>
+                                    <span class="eval-date">En 1 semana</span>
+                                </div>
+                                <button class="btn-eval">Ver detalles</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Weekly Activity -->
+                    <section class="section">
+                        <div class="section-header">
+                            <h2>Actividad Semanal</h2>
+                        </div>
+                        <div class="activity-chart">
+                            <div class="chart-bar" style="height: 60%">
+                                <span class="bar-label">L</span>
+                            </div>
+                            <div class="chart-bar" style="height: 80%">
+                                <span class="bar-label">M</span>
+                            </div>
+                            <div class="chart-bar" style="height: 45%">
+                                <span class="bar-label">M</span>
+                            </div>
+                            <div class="chart-bar" style="height: 90%">
+                                <span class="bar-label">J</span>
+                            </div>
+                            <div class="chart-bar" style="height: 70%">
+                                <span class="bar-label">V</span>
+                            </div>
+                            <div class="chart-bar" style="height: 30%">
+                                <span class="bar-label">S</span>
+                            </div>
+                            <div class="chart-bar" style="height: 40%">
+                                <span class="bar-label">D</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <!-- Achievements -->
+                    <section class="section">
+                        <div class="section-header">
+                            <h2>Logros Recientes</h2>
+                        </div>
+                        <div class="achievements-list">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🔥</div>
+                                <div class="achievement-info">
+                                    <h4>Racha de 7 días</h4>
+                                    <p>¡Sigue así!</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">⭐</div>
+                                <div class="achievement-info">
+                                    <h4>Examen perfecto</h4>
+                                    <p>100% en JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🎓</div>
+                                <div class="achievement-info">
+                                    <h4>Primer certificado</h4>
+                                    <p>HTML & CSS básico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recommended Courses -->
+                    <section class="section">
+                        <div class="section-header">
+                            <h2>Recomendados para ti</h2>
+                        </div>
+                        <div class="recommended-list">
+                            <div class="recommended-item">
+                                <div class="recommended-thumb" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                                <div class="recommended-info">
+                                    <h4>Node.js Avanzado</h4>
+                                    <p>⭐ 4.8 • 2,345 estudiantes</p>
+                                </div>
+                            </div>
+                            <div class="recommended-item">
+                                <div class="recommended-thumb" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                                <div class="recommended-info">
+                                    <h4>TypeScript desde Cero</h4>
+                                    <p>⭐ 4.9 • 1,876 estudiantes</p>
+                                </div>
+                            </div>
+                            <div class="recommended-item">
+                                <div class="recommended-thumb" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                                <div class="recommended-info">
+                                    <h4>Docker y Kubernetes</h4>
+                                    <p>⭐ 4.7 • 3,221 estudiantes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
